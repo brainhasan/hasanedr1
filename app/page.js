@@ -19,6 +19,7 @@ export default function Home() {
       port: Number(process.env.NEXT_PUBLIC_HIVEMQ_PORT),
       username: process.env.NEXT_PUBLIC_HIVEMQ_USER,
       password: process.env.NEXT_PUBLIC_HIVEMQ_PASS,
+      path: '/mqtt',
       clean: true,
       connectTimeout: 4000,
       clientId: 'WebClient_' + Math.random().toString(16).substr(2, 8),
